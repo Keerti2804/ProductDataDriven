@@ -1,0 +1,40 @@
+Status: FAILED
+Time Taken: 61287
+Size: 0
+Timestamp: Wed Jun 02 00:30:11 IST 2021
+TestStep: CreateProduct
+
+----------------- Messages ------------------------------
+java.net.SocketTimeoutException: Read timed out
+
+----------------- Properties ------------------------------
+Endpoint: http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   \r
+   <soap:Header/>
+   \r
+   <soap:Body>
+      \r
+      <def:catalogProductRepositoryV1SaveRequest>
+         \r
+         <product>
+            \r
+            <sku>SKU00121</sku>
+            <name>Redmi Note1</name>
+            <attributeSetId>4</attributeSetId>
+            //default value 4
+            <price>5000</price>
+            <typeId>simple</typeId>
+         </product>
+         \r
+      </def:catalogProductRepositoryV1SaveRequest>
+      \r
+   </soap:Body>
+   \r
+</soap:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -

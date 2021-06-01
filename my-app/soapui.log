@@ -1,0 +1,137 @@
+2021-06-02 00:30:09,038 WARN  [SoapUI] Missing folder [C:\Users\KeertiSarode\Desktop\ReadyAPI_Rest\my-app\ext] for external libraries
+2021-06-02 00:30:09,389 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\KeertiSarode\soapui-settings.xml]
+2021-06-02 00:30:10,508 INFO  [WsdlProject] Loaded project from [file:/C:/Users/KeertiSarode/Desktop/ReadyAPI_Rest/my-app/Product-DataDriven-Testing-soapui-project.xml]
+2021-06-02 00:30:11,295 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Product DataDriven Testing]
+2021-06-02 00:30:11,297 INFO  [SoapUITestCaseRunner] Running Project [Product DataDriven Testing], runType = SEQUENTIAL
+2021-06-02 00:30:11,322 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [System Testing]
+2021-06-02 00:30:11,364 INFO  [SoapUITestCaseRunner] running step [input]
+2021-06-02 00:30:11,435 INFO  [SoapUITestCaseRunner] running step [CreateProduct]
+2021-06-02 00:31:12,407 ERROR [WsdlSubmit] Exception in request: java.net.SocketTimeoutException: Read timed out
+2021-06-02 00:31:12,407 ERROR [SoapUI] An error occurred [Read timed out], see error log for details
+2021-06-02 00:31:12,409 ERROR [errorlog] java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:362)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:324)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:237)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:127)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:80)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:242)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:419)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-02 00:31:12,727 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2021-06-02 00:31:12,727 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status UNKNOWN
+2021-06-02 00:31:12,732 ERROR [SoapUITestCaseRunner] CreateProduct failed, exporting to [C:\Users\KeertiSarode\Desktop\ReadyAPI_Rest\my-app\target/surefire-reports\System_Test-System_Testing-CreateProduct-0-FAILED.txt]
+2021-06-02 00:31:13,784 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [System Testing], time taken: 61345ms, status: FAILED
+2021-06-02 00:31:13,793 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [ProductTesting]
+2021-06-02 00:31:13,799 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-06-02 00:31:14,287 INFO  [log] The number of rows are 5 and The number of Column is 5
+2021-06-02 00:31:14,310 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [System Testing]
+2021-06-02 00:31:14,311 INFO  [SoapUITestCaseRunner] running step [input]
+2021-06-02 00:31:14,313 INFO  [SoapUITestCaseRunner] running step [CreateProduct]
+2021-06-02 00:31:43,106 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2021-06-02 00:31:43,151 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2021-06-02 00:31:43,158 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2021-06-02 00:31:43,164 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2021-06-02 00:31:43,167 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2021-06-02 00:31:43,175 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2021-06-02 00:31:43,182 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2021-06-02 00:31:43,188 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2021-06-02 00:31:43,196 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2021-06-02 00:31:43,201 INFO  [SchemaUtils] Added default schema from file:/C:/Users/KeertiSarode/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2021-06-02 00:31:43,208 INFO  [SchemaUtils] Loading schema types from [file:/C:/Users/KeertiSarode/Documents/Reskill/Files/Project/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/catalogProductRepositoryV1.xml]
+2021-06-02 00:31:43,210 INFO  [SchemaUtils] Getting schema file:/C:/Users/KeertiSarode/Documents/Reskill/Files/Project/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/catalogProductRepositoryV1.xml
+2021-06-02 00:31:43,613 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:43,613 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:31:43,615 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-06-02 00:31:43,974 INFO  [log] The name is MacBook 
+2021-06-02 00:31:43,975 INFO  [log] Invalid item
+2021-06-02 00:31:43,983 INFO  [SoapUITestCaseRunner] running step [ProductList]
+2021-06-02 00:31:46,862 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:46,862 INFO  [SoapUITestCaseRunner] running step [retrieveProductDetails]
+2021-06-02 00:31:47,880 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:47,881 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:31:47,928 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [System Testing], time taken: 33559ms, status: FINISHED
+2021-06-02 00:31:47,930 INFO  [log] FINISHED
+2021-06-02 00:31:47,930 INFO  [log] 33559
+2021-06-02 00:31:47,937 INFO  [log] 5
+2021-06-02 00:31:47,938 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [System Testing]
+2021-06-02 00:31:47,938 INFO  [SoapUITestCaseRunner] running step [input]
+2021-06-02 00:31:47,940 INFO  [SoapUITestCaseRunner] running step [CreateProduct]
+2021-06-02 00:31:49,645 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:49,646 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:31:49,647 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-06-02 00:31:49,650 INFO  [log] The name is Redmi Note6 
+2021-06-02 00:31:49,650 INFO  [log] name is Redmi Note6 -it is a valid item
+2021-06-02 00:31:49,651 INFO  [SoapUITestCaseRunner] running step [ProductList]
+2021-06-02 00:31:51,800 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:51,801 INFO  [SoapUITestCaseRunner] running step [retrieveProductDetails]
+2021-06-02 00:31:52,795 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:52,796 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:31:52,844 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [System Testing], time taken: 4843ms, status: FINISHED
+2021-06-02 00:31:52,846 INFO  [log] FINISHED
+2021-06-02 00:31:52,846 INFO  [log] 4843
+2021-06-02 00:31:52,849 INFO  [log] 5
+2021-06-02 00:31:52,862 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [System Testing]
+2021-06-02 00:31:52,862 INFO  [SoapUITestCaseRunner] running step [input]
+2021-06-02 00:31:52,865 INFO  [SoapUITestCaseRunner] running step [CreateProduct]
+2021-06-02 00:31:55,050 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:55,051 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:31:55,053 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-06-02 00:31:55,060 INFO  [log] The name is Bat 
+2021-06-02 00:31:55,061 INFO  [log] name is Bat -it is a valid item
+2021-06-02 00:31:55,069 INFO  [SoapUITestCaseRunner] running step [ProductList]
+2021-06-02 00:31:56,856 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:56,857 INFO  [SoapUITestCaseRunner] running step [retrieveProductDetails]
+2021-06-02 00:31:57,764 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:57,768 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:31:57,813 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [System Testing], time taken: 4886ms, status: FINISHED
+2021-06-02 00:31:57,815 INFO  [log] FINISHED
+2021-06-02 00:31:57,819 INFO  [log] 4886
+2021-06-02 00:31:57,819 INFO  [log] 5
+2021-06-02 00:31:57,821 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [System Testing]
+2021-06-02 00:31:57,821 INFO  [SoapUITestCaseRunner] running step [input]
+2021-06-02 00:31:57,822 INFO  [SoapUITestCaseRunner] running step [CreateProduct]
+2021-06-02 00:31:59,244 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:31:59,245 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:31:59,245 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-06-02 00:31:59,248 INFO  [log] The name is Redmi Note1 
+2021-06-02 00:31:59,248 INFO  [log] name is Redmi Note1 -it is a valid item
+2021-06-02 00:31:59,250 INFO  [SoapUITestCaseRunner] running step [ProductList]
+2021-06-02 00:32:01,094 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:32:01,095 INFO  [SoapUITestCaseRunner] running step [retrieveProductDetails]
+2021-06-02 00:32:02,082 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-06-02 00:32:02,083 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2021-06-02 00:32:02,150 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [System Testing], time taken: 4250ms, status: FINISHED
+2021-06-02 00:32:02,153 INFO  [log] FINISHED
+2021-06-02 00:32:02,154 INFO  [log] 4250
+2021-06-02 00:32:02,159 INFO  [log] 5
+2021-06-02 00:32:02,172 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [ProductTesting], time taken: 48360ms, status: FINISHED
+2021-06-02 00:32:02,173 INFO  [SoapUITestCaseRunner] Project [Product DataDriven Testing] finished with status [FAILED] in 110869ms
